@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import { Route, BrowserRouter, Switch, NavLink, Link } from 'react-router-dom';
+import List from './components/List.js';
+import Create from './components/Create.js';
+import Header from './components/Header.js';
+import Details from './components/Details.js';
+import './styles/main.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class  FullStack extends Component {
+  
+    render() { 
+
+        return ( 
+            <>
+            <h1>My Friends</h1>
+       
+            <BrowserRouter>
+
+                <Header />
+                   
+                    <Switch>
+
+                        <Route exact path="/" component={List} />
+
+                        <Route path="/friends/:id" component={Details} />
+
+                        <Route path="/create" component={Create} />
+
+
+                    </Switch>
+
+                </BrowserRouter>
+            </>
+         );
+    }
 }
-
-export default App;
+ 
+export default FullStack;
