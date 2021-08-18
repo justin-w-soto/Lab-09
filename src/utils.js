@@ -8,13 +8,13 @@ export const getFriends = async () => {
 
 
 export const getFriend = async () => {
-    const resp = await fetch(`${URL}/friends/${id}`);
+    const resp = await fetch(`${URL}/friends`);
     const data = await resp.json();
     return data;
 };
 
 export const getShirtColor = async () => {
-    const resp = await fetch(`${URL}/friends/${shirt_id}`);
+    const resp = await fetch(`${URL}/friends`);
     const data = await resp.json();
     return data;
 };

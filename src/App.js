@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import { Route, BrowserRouter, Switch, NavLink, Link } from 'react-router-dom';
+import { Route, BrowserRouter, Switch } from 'react-router-dom';
 import List from './components/List.js';
 import Create from './components/Create.js';
 import Header from './components/Header.js';
 import Details from './components/Details.js';
-import './styles/main.css';
 
 
 class  FullStack extends Component {
