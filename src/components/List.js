@@ -9,6 +9,7 @@ class List extends Component {
 
     componentDidMount = async () => {
         const data = await getFriends();
+        console.log(data);
         this.setState({ friends: data });
     };
     
@@ -23,12 +24,9 @@ class List extends Component {
                             <Link to={`/friends/${frns.id}`}>{frns.name}</Link>
                         </h2>
 
-                        <img src={frns.image_url} />
+                        {/* <img src={frns.image_url} /> */}
 
-                        <p>
-                           Shirt Color is {frns.shirt_id} 
-                        </p>
-
+                        
                     </div>
                 ))}
             </section>

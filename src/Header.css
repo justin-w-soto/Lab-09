@@ -1,0 +1,23 @@
+header {
+    width: 100vw;
+    height: 2em;
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5em;
+    font-weight: bold;
+
+}
+
+a.active {
+    text-decoration: none;
+    color: brown;
+
+}
+
+a {
+    margin: 1.5em;
+    color: rgb(32, 8, 8);
+    text-decoration: none;
+}
+

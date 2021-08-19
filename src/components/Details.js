@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { getFriend, getShirtColor } from '../utils.js';
+import '../Home.css';
 
 class Details extends Component {
     state = { 
@@ -19,7 +20,7 @@ class Details extends Component {
         return ( 
             <>
             <h1>{this.state.name}</h1>
-            <img src={this.state.image_url} alt="face" />
+            {/* <img src={this.state.image_url} alt="face" /> */}
             <form id="update-friend">
                 <div className="form-group">
                     <label>Name </label>
@@ -32,16 +33,6 @@ class Details extends Component {
                     ></input>
                 </div>
                 <div className="form-group">
-                    <label>Image URL: </label>
-                    <input
-                        onChange={(e) => {
-                            this.setState({ image_url: e.target.value });
-                        }}
-                        type="text"
-                        value={this.state.image_url}
-                    ></input>
-                </div>
-                <div className="form-group">
                     <label>Cool Factor: </label>
                     <input
                         onChange={(e) => {
@@ -51,7 +42,7 @@ class Details extends Component {
                         }}
                         type="number"
                         value={this.state.cool_factor}
-                    ></input>
+                        ></input>
                 </div>
                 <div className="form-group">
                     <label>Cool Haircut: </label>
@@ -61,24 +52,39 @@ class Details extends Component {
                         }}
                         type="boolean"
                         value={this.state.cool_haircut}
-                    ></input>
+                        ></input>
                 </div>
                 <div className="form-group">
                     <label>Shirt Color</label>
                     <select>
-                        {this.state.shirt_id.map((shrt) => {
+                        <option>red</option>
+                        <option>blue</option>
+                        <option>yellow</option>
+                        <option>brown</option>
+                        <option>green</option>
+                        {/* {this.state.shirt_color.map((shrt) => {
                             return (
                                 <option value={shrt.color}>{shrt.color}</option>
                             );
-                        })}
+                        })} */}
                     </select>
                 </div>
+            {/* <div className="form-group">
+                <label>Image URL: </label>
+                <input
+                    onChange={(e) => {
+                        this.setState({ image_url: e.target.value });
+                    }}
+                    type="text"
+                    value={this.state.image_url}
+                ></input> */}
+            {/* </div> */}
             </form>
         </>
          );
+        }
     }
-}
- 
-export default Details;
+    
+    export default Details;
 
 

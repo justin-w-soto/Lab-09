@@ -1,0 +1,48 @@
+.topdiv {
+    color: white;
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 3em;
+}
+
+h1 {
+    margin-left:.5em ;
+}
+
+body {
+    color: brown;
+}
+
+a:hover{
+    text-decoration: none;
+    color: brown;
+
+}
+
+a {
+    margin:1.5em;
+    color: rgb(77, 68, 68);
+    text-decoration: none;
+}
+
+
+ .form-group{
+    margin-left: 1em;
+    
+}
+
+input {
+    color:rgb(168, 83, 62);
+    font-weight: 900;
+    margin: 1em;
+    width: 12em;
+}
+
+select {
+    margin-left: 1em;
+    color:rgb(168, 83, 62);
+    font-weight: 900;
+    margin: 1em;
+    width: 12em;
+}

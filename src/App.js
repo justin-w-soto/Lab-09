@@ -4,6 +4,7 @@ import List from './components/List.js';
 import Create from './components/Create.js';
 import Header from './components/Header.js';
 import Details from './components/Details.js';
+import './Home.css';
 
 
 class  FullStack extends Component {
@@ -12,11 +13,13 @@ class  FullStack extends Component {
 
         return ( 
             <>
-            <h1>My Friends</h1>
        
             <BrowserRouter>
-
+                <div className="topdiv">
+                    <h1>My Friends</h1>
+                </div>
                 <Header />
+                 
                    
                     <Switch>
 
@@ -28,6 +31,7 @@ class  FullStack extends Component {
 
 
                     </Switch>
+
 
                 </BrowserRouter>
             </>
