@@ -6,8 +6,11 @@ export const getFriends = async () => {
     return data;
 };
 
+// The function below should have an id in place of the integer in the curly braces.
+//  Right now placing "id" inside the braces breaks the app.
+
 export const getFriend = async () => {
-    const resp = await fetch(`${URL}/friends`);
+    const resp = await fetch(`${URL}/friends/${0}`);   
     const data = await resp.json();
     return data;
 };

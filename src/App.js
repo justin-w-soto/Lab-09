@@ -19,7 +19,6 @@ class  FullStack extends Component {
                     <h1>My Friends</h1>
                 </div>
                 <Header />
-                 
                    
                     <Switch>
 
